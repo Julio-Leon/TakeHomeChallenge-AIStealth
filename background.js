@@ -19,9 +19,9 @@ console.log("background.js running") // background console logs can be found by 
 
 /* YOUR CODE BELOW THIS LINE :) */  
 
-addEventListener('fetch', (event) => {
-    Object.defineProperty(document, 'visibilityState', {value: 'visible', writable: true});
-    Object.defineProperty(document, 'hidden', {value: false, writable: true});
-    Object.defineProperty(document, 'blur', {value: false, writable: true});
-    document.dispatchEvent(new Event("visibilitychange"));
-})
+// addEventListener('fetch', (event) => {
+//     Object.defineProperty(document, 'visibilityState', {value: 'visible', writable: true});
+//     Object.defineProperty(document, 'hidden', {value: false, writable: true});
+//     Object.defineProperty(document, 'blur', {value: false, writable: true});
+//     document.dispatchEvent(new Event("visibilitychange"));
+// })

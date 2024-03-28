@@ -15,10 +15,10 @@ Testing: Use this site for easy testing https://ai-stealth-challenge.web.app
 Hint: The solution is only a few lines of code.
 */
 
-// Object.defineProperty(document, 'visibilityState', {value: 'visible', writable: true});
-// Object.defineProperty(document, 'hidden', {value: false, writable: true});
-// Object.defineProperty(document, 'blur', {value: false, writable: true});
-// document.dispatchEvent(new Event("visibilitychange"));
+Object.defineProperty(document, 'visibilityState', {value: 'visible', writable: true});
+Object.defineProperty(document, 'hidden', {value: false, writable: true});
+Object.defineProperty(document, 'blur', {value: false, writable: true});
+document.dispatchEvent(new Event("visibilitychange"));
 
 function start() {
     // This function is called when the extension is now running on the webpage
